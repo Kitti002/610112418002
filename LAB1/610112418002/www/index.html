@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Hello World !!!</title>
+        <script src="js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+
+        <label id="lb1">Mr.Kitti</label>
+        <hr>
+    <form id="fm1">
+        <input id="in1" type="text">
+        <br>
+        <button>Calcolate</button>
+    </form>
+        <label id="lb_result"></label>
+    </body>
+</html>
+<script>
+$(function(){
+      $("#ib1").text("610112418002");
+
+    // $("button").clike(function(){})
+    //      var value = $("#in1").val();
+    //      var result = value * value;
+    //      $("#la_result").html(result)
+    // });
+    
+    $("#fm1").submit(function(event){
+        var value = $("#in1").val();
+        var result = value * value;
+        $("#lb_result").html(result);
+        event.preventDefault();
+    });
+});// jQuery Handle // ready
+</script>
